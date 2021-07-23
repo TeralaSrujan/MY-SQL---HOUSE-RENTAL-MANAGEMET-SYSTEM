@@ -1,0 +1,76 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="m.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<style>
+	
+  body{
+    background-image: url('https://static.wixstatic.com/media/ee5f36_1e94323eb4484628976a96f4cdedcedd~mv2.png/v1/fill/w_2084,h_1200,fp_0.50_0.50,usm_0.66_1.00_0.01/ee5f36_1e94323eb4484628976a96f4cdedcedd~mv2.png');
+    font-family: 'Jost', sans-serif;
+	background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  }
+ 
+ 
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="#">House Rental Management System</a>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="index.html">Home</a></li> 
+			  <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">View Houses <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="viewhouse.php">Houses</a></li>
+				  <li><a href="viewrating.php">Rating</a></li>
+				</ul>
+			  </li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  
+			  <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+		
+<br>
+<br>
+
+<div class="container" align="left">
+	<div class="card" style="width: 60rem;border-radius: 25px;padding-left: 200px;font-size: 20px;background-color:#ffffff">
+<br>
+ <div class="card-body"><h1 class="card-title"><B style="padding-left: 80px;color: rgb(10, 10, 10);">Sign Up Here</B></h1><br>
+<form name="Form1" action="signup.php" method="get">
+
+
+<b style="padding-left: 90px;">Sign Up as : </b>
+		 <select name="s" size="1">
+<option value="owner">Owner</option>
+<option value="tsenant">Tenant</option>
+</select>
+<br><br><center>
+<input type=submit value="Submit" class="btn btn-dark"></center>
+</form><center>
+<a href="signin.html" class="btn btn-dark"><b>Already a Member ?  Sign in here</b></a></center><br><br><br>
+</div>
+</body>
+</html>
